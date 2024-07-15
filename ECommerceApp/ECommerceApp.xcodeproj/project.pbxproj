@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14F3C22F2C456A380063247A /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F3C22E2C456A380063247A /* KeyboardHelper.swift */; };
 		CF6B7CD42C43E19300383420 /* ECommerceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B7CD32C43E19300383420 /* ECommerceApp.swift */; };
 		CF6B7CD62C43E19300383420 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B7CD52C43E19300383420 /* LoginView.swift */; };
 		CF6B7CD82C43E19500383420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6B7CD72C43E19500383420 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14F3C22E2C456A380063247A /* KeyboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
 		CF6B7CD02C43E19300383420 /* ECommerceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECommerceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6B7CD32C43E19300383420 /* ECommerceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceApp.swift; sourceTree = "<group>"; };
 		CF6B7CD52C43E19300383420 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				CF6B7D092C43F7A600383420 /* LottieView.swift */,
+				14F3C22E2C456A380063247A /* KeyboardHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				CF6B7CD42C43E19300383420 /* ECommerceApp.swift in Sources */,
 				CF6B7D0A2C43F7A600383420 /* LottieView.swift in Sources */,
 				CF6B7D0D2C44323800383420 /* Utils.swift in Sources */,
+				14F3C22F2C456A380063247A /* KeyboardHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
