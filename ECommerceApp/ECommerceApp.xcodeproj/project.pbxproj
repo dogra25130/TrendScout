@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14F3C22F2C456A380063247A /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F3C22E2C456A380063247A /* KeyboardHelper.swift */; };
+		CF60B1EB2C47F1BE005553EA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF60B1EA2C47F1BE005553EA /* LoginViewModel.swift */; };
 		CF6B7CD42C43E19300383420 /* ECommerceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B7CD32C43E19300383420 /* ECommerceApp.swift */; };
 		CF6B7CD62C43E19300383420 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B7CD52C43E19300383420 /* LoginView.swift */; };
 		CF6B7CD82C43E19500383420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6B7CD72C43E19500383420 /* Assets.xcassets */; };
@@ -19,6 +19,8 @@
 		CF6B7D072C43F6B400383420 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CF6B7D062C43F6B400383420 /* Lottie */; };
 		CF6B7D0A2C43F7A600383420 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B7D092C43F7A600383420 /* LottieView.swift */; };
 		CF6B7D0D2C44323800383420 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B7D0C2C44323800383420 /* Utils.swift */; };
+		CF840F0A2C4816D900A4F6D1 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF840F092C4816D900A4F6D1 /* OTPView.swift */; };
+		CF840F0C2C4817B900A4F6D1 /* OTPFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF840F0B2C4817B900A4F6D1 /* OTPFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14F3C22E2C456A380063247A /* KeyboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
+		CF60B1EA2C47F1BE005553EA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CF6B7CD02C43E19300383420 /* ECommerceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECommerceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6B7CD32C43E19300383420 /* ECommerceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceApp.swift; sourceTree = "<group>"; };
 		CF6B7CD52C43E19300383420 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		CF6B7D032C43F62F00383420 /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
 		CF6B7D092C43F7A600383420 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		CF6B7D0C2C44323800383420 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CF840F092C4816D900A4F6D1 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		CF840F0B2C4817B900A4F6D1 /* OTPFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				CF6B7CD52C43E19300383420 /* LoginView.swift */,
+				CF60B1EA2C47F1BE005553EA /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -168,6 +173,8 @@
 		CF6B7D002C43EBF100383420 /* OTP */ = {
 			isa = PBXGroup;
 			children = (
+				CF840F092C4816D900A4F6D1 /* OTPView.swift */,
+				CF840F0B2C4817B900A4F6D1 /* OTPFieldView.swift */,
 			);
 			path = OTP;
 			sourceTree = "<group>";
@@ -192,7 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				CF6B7D092C43F7A600383420 /* LottieView.swift */,
-				14F3C22E2C456A380063247A /* KeyboardHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -342,11 +348,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF840F0A2C4816D900A4F6D1 /* OTPView.swift in Sources */,
+				CF840F0C2C4817B900A4F6D1 /* OTPFieldView.swift in Sources */,
 				CF6B7CD62C43E19300383420 /* LoginView.swift in Sources */,
 				CF6B7CD42C43E19300383420 /* ECommerceApp.swift in Sources */,
 				CF6B7D0A2C43F7A600383420 /* LottieView.swift in Sources */,
+				CF60B1EB2C47F1BE005553EA /* LoginViewModel.swift in Sources */,
 				CF6B7D0D2C44323800383420 /* Utils.swift in Sources */,
-				14F3C22F2C456A380063247A /* KeyboardHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
