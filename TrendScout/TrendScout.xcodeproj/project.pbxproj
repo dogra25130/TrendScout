@@ -19,10 +19,14 @@
 		CF06AD182C4C2CF9003034FC /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06AD172C4C2CF9003034FC /* RegisterModel.swift */; };
 		CF06AD1A2C4C2D18003034FC /* OTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06AD192C4C2D18003034FC /* OTPService.swift */; };
 		CF06AD1C2C4C2D24003034FC /* OTPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06AD1B2C4C2D24003034FC /* OTPModel.swift */; };
-		CF06AD202C4C2D90003034FC /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06AD1F2C4C2D90003034FC /* HomeScreen.swift */; };
+		CF06AD202C4C2D90003034FC /* BaseScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06AD1F2C4C2D90003034FC /* BaseScreenView.swift */; };
 		CF06AD222C4C357D003034FC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF06AD212C4C357D003034FC /* Launch Screen.storyboard */; };
 		CF06AD242C4C35A2003034FC /* AppLaunchIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF06AD232C4C35A2003034FC /* AppLaunchIcon.jpg */; };
 		CF60B1EB2C47F1BE005553EA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF60B1EA2C47F1BE005553EA /* LoginViewModel.swift */; };
+		CF6391532C500C13000FAB4A /* BaseScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6391522C500C12000FAB4A /* BaseScreenViewModel.swift */; };
+		CF6391552C501473000FAB4A /* HomeScreens+TopTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6391542C501473000FAB4A /* HomeScreens+TopTabs.swift */; };
+		CF6391572C501691000FAB4A /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6391562C501691000FAB4A /* HomeScreenViewModel.swift */; };
+		CF6391592C501B09000FAB4A /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6391582C501B09000FAB4A /* CustomSegmentedControl.swift */; };
 		CF6B7CD42C43E19300383420 /* TrendScout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B7CD32C43E19300383420 /* TrendScout.swift */; };
 		CF6B7CD62C43E19300383420 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B7CD52C43E19300383420 /* LoginScreen.swift */; };
 		CF6B7CD82C43E19500383420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6B7CD72C43E19500383420 /* Assets.xcassets */; };
@@ -36,6 +40,8 @@
 		CF6B7D0D2C44323800383420 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B7D0C2C44323800383420 /* Utils.swift */; };
 		CF840F0A2C4816D900A4F6D1 /* OTPScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF840F092C4816D900A4F6D1 /* OTPScreen.swift */; };
 		CF840F0C2C4817B900A4F6D1 /* OTPFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF840F0B2C4817B900A4F6D1 /* OTPFieldView.swift */; };
+		CFE289BD2C4E024800DBF760 /* AnimatedSideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE289BC2C4E024800DBF760 /* AnimatedSideBar.swift */; };
+		CFE289BF2C4E04B400DBF760 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE289BE2C4E04B400DBF760 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +74,14 @@
 		CF06AD172C4C2CF9003034FC /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		CF06AD192C4C2D18003034FC /* OTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPService.swift; sourceTree = "<group>"; };
 		CF06AD1B2C4C2D24003034FC /* OTPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPModel.swift; sourceTree = "<group>"; };
-		CF06AD1F2C4C2D90003034FC /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		CF06AD1F2C4C2D90003034FC /* BaseScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenView.swift; sourceTree = "<group>"; };
 		CF06AD212C4C357D003034FC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CF06AD232C4C35A2003034FC /* AppLaunchIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AppLaunchIcon.jpg; sourceTree = "<group>"; };
 		CF60B1EA2C47F1BE005553EA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CF6391522C500C12000FAB4A /* BaseScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenViewModel.swift; sourceTree = "<group>"; };
+		CF6391542C501473000FAB4A /* HomeScreens+TopTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeScreens+TopTabs.swift"; sourceTree = "<group>"; };
+		CF6391562C501691000FAB4A /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		CF6391582C501B09000FAB4A /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		CF6B7CD02C43E19300383420 /* TrendScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6B7CD32C43E19300383420 /* TrendScout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendScout.swift; sourceTree = "<group>"; };
 		CF6B7CD52C43E19300383420 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -87,6 +97,8 @@
 		CF6B7D0C2C44323800383420 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CF840F092C4816D900A4F6D1 /* OTPScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPScreen.swift; sourceTree = "<group>"; };
 		CF840F0B2C4817B900A4F6D1 /* OTPFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFieldView.swift; sourceTree = "<group>"; };
+		CFE289BC2C4E024800DBF760 /* AnimatedSideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSideBar.swift; sourceTree = "<group>"; };
+		CFE289BE2C4E04B400DBF760 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +148,9 @@
 		CF06AD1E2C4C2D89003034FC /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CF06AD1F2C4C2D90003034FC /* HomeScreen.swift */,
+				CFE289BE2C4E04B400DBF760 /* HomeScreen.swift */,
+				CF6391542C501473000FAB4A /* HomeScreens+TopTabs.swift */,
+				CF6391562C501691000FAB4A /* HomeScreenViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -205,6 +219,7 @@
 		CF6B7CFD2C43EBE000383420 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CFE289BB2C4E023C00DBF760 /* Base */,
 				CF06AD1E2C4C2D89003034FC /* Home */,
 				CF06AD1D2C4C2D51003034FC /* Auth */,
 			);
@@ -268,6 +283,8 @@
 				CF6B7D092C43F7A600383420 /* LottieView.swift */,
 				CF06AD0A2C4A1696003034FC /* GaugeProgressStyle.swift */,
 				CF06AD132C4C2CA3003034FC /* ButtonWithLoaderView.swift */,
+				CFE289BC2C4E024800DBF760 /* AnimatedSideBar.swift */,
+				CF6391582C501B09000FAB4A /* CustomSegmentedControl.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -278,6 +295,15 @@
 				CF6B7D0C2C44323800383420 /* Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		CFE289BB2C4E023C00DBF760 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CF06AD1F2C4C2D90003034FC /* BaseScreenView.swift */,
+				CF6391522C500C12000FAB4A /* BaseScreenViewModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,18 +449,24 @@
 				CF840F0A2C4816D900A4F6D1 /* OTPScreen.swift in Sources */,
 				CF06AD122C4C1397003034FC /* LoginModel.swift in Sources */,
 				CF840F0C2C4817B900A4F6D1 /* OTPFieldView.swift in Sources */,
+				CF6391572C501691000FAB4A /* HomeScreenViewModel.swift in Sources */,
+				CF6391552C501473000FAB4A /* HomeScreens+TopTabs.swift in Sources */,
 				CF6B7CD62C43E19300383420 /* LoginScreen.swift in Sources */,
-				CF06AD202C4C2D90003034FC /* HomeScreen.swift in Sources */,
+				CF06AD202C4C2D90003034FC /* BaseScreenView.swift in Sources */,
 				CF06AD0B2C4A1696003034FC /* GaugeProgressStyle.swift in Sources */,
 				CF06AD1C2C4C2D24003034FC /* OTPModel.swift in Sources */,
 				CF06AD162C4C2CD1003034FC /* RegisterService.swift in Sources */,
 				CF6B7CD42C43E19300383420 /* TrendScout.swift in Sources */,
 				CF06AD092C4A0F35003034FC /* NetworkManager.swift in Sources */,
 				CF06AD1A2C4C2D18003034FC /* OTPService.swift in Sources */,
+				CFE289BF2C4E04B400DBF760 /* HomeScreen.swift in Sources */,
 				CF06AD022C49F814003034FC /* RegisterScreen.swift in Sources */,
+				CF6391532C500C13000FAB4A /* BaseScreenViewModel.swift in Sources */,
+				CFE289BD2C4E024800DBF760 /* AnimatedSideBar.swift in Sources */,
 				CF6B7D0A2C43F7A600383420 /* LottieView.swift in Sources */,
 				CF60B1EB2C47F1BE005553EA /* LoginViewModel.swift in Sources */,
 				CF06AD062C4A0EF9003034FC /* LoginService.swift in Sources */,
+				CF6391592C501B09000FAB4A /* CustomSegmentedControl.swift in Sources */,
 				CF06AD182C4C2CF9003034FC /* RegisterModel.swift in Sources */,
 				CF06AD042C49F81C003034FC /* RegisterViewModel.swift in Sources */,
 				CF6B7D0D2C44323800383420 /* Utils.swift in Sources */,

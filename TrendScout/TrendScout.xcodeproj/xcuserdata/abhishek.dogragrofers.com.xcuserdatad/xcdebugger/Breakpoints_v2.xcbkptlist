@@ -109,6 +109,21 @@
                   endingLineNumber = "26"
                   offsetFromSymbolStart = "32">
                </Location>
+               <Location
+                  uuid = "593921EF-878B-4B0D-B5A6-45C75A23001D - 598fa14aacc0455f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrendScout.OTPViewModel.verifyOTP() -&gt; ()"
+                  moduleName = "TrendScout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishek.dogragrofers.com/Documents/Projects/TrendScout/TrendScout/TrendScout/Modules/Auth/OTP/OTPViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "140">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
