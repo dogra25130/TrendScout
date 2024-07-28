@@ -8,9 +8,9 @@
 import SwiftUI
 
 enum MenuOptions: String, CaseIterable {
+    case accessories = "Accessories"
     case clothes = "Clothes"
     case jewellery = "Jewellery"
-    case accessories = "Accessories"
     case premium = "Premium Store"
     case profile = "Profile"
     case logout = "Logout"

@@ -10,21 +10,21 @@ import SwiftUI
 struct HomeScreen: View {
     @State var viewModel = HomeScreenViewModel()
     @State var showSideMenu: Bool = false
-    @State var currentTab: MenuOptions = .clothes
-    @State var currentBaseModel: [BaseDataModel] = []
-    @State var selectedPage: Int = 0
-    
+    @State var currentSideTab: MenuOptions = .accessories
+    @State var baseScrollViewOffset: CGFloat = 0.0
     var body: some View {
+        
         AnimatedSideBar(showMenu: $showSideMenu) { safeArea in
-            NavigationStack {
-                Screen()
-            }
+            BaseScreenView(sideTab: $currentSideTab,
+                           showSideMenu: $showSideMenu)
+            
         } menuView: { safeArea in
             SideBarMenuView(safeArea)
         } background: {
             Rectangle()
-                .fill(.black.opacity(0.8))
+                .fill(Utils.themeSecondaryBackgroundColor)
         }
+        
     }
 }
 
@@ -39,9 +39,9 @@ extension HomeScreen {
                 .padding(.bottom, .p10)
                 .foregroundStyle(Color.white)
             
+            SideBarButton(.accessories)
             SideBarButton(.clothes)
             SideBarButton(.jewellery)
-            SideBarButton(.accessories)
             SideBarButton(.premium)
             Spacer()
             SideBarButton(.profile)
@@ -57,9 +57,8 @@ extension HomeScreen {
     @ViewBuilder
     private func SideBarButton(_ menu: MenuOptions) -> some View {
         Button {
-            selectedPage = .zero
             withAnimation {
-                currentTab = menu
+                currentSideTab = menu
             }
         } label: {
             HStack {
