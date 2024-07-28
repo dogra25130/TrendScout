@@ -9,30 +9,51 @@ import SwiftUI
 struct CustomSegmentedControl: View {
     @Binding var selectedIndex: Int
     @Binding var currentScreenModels: [BaseDataModel]
-    
-    let color = Color.secondary
+    @Namespace private var namespace
+    @State private var localSelectedIndex = 0
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: .p20) {
-                ForEach(currentScreenModels.indices, id:\.self) { index in
-                    Text(currentScreenModels[index].tabTitle)
-                        .foregroundStyle(Color.black)
-                        .fontWeight(selectedIndex == index ? .bold : .regular)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 1, style: .circular)
-                                .fill(Color(hex: "#F56217"))
-                                .cornerRadius(20)
-                                .offset(y: .p14)
-                                .frame(height: .p6)
-                                .opacity(selectedIndex == index ? 1 : 0.01)
-                        )
-                        .onTapGesture {
-                            selectedIndex = index
+            ScrollViewReader { proxy in
+                HStack(spacing: .p20) {
+                    ForEach(currentScreenModels.indices, id:\.self) { index in
+                        ZStack {
+                            if index == selectedIndex {
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(Color.red.opacity(0.5))
+                                    .offset(y: .p32)
+                                    .matchedGeometryEffect(id: "ID", in: namespace)
+                                
+                            }
+                            Text(currentScreenModels[index].tabTitle)
+                                .font(.setFont(localSelectedIndex == index ? .bold700 : .medium500, .p16))
+                                .foregroundStyle(Color.black)
+                                .padding(.p2)
                         }
+                        .id(index)
+                        .padding(.bottom, .p10)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: .p28)
+                        .onTapGesture {
+                            withAnimation {
+                                selectedIndex = index
+                            }
+                        }
+                    }
+                }
+                .padding(EdgeInsets(top: .p16, leading: .p16, bottom: .p4, trailing: .p16))
+                .onChange(of: selectedIndex) {
+                    withAnimation {
+                        proxy.scrollTo(selectedIndex, anchor: .top)
+                    }
                 }
             }
-            .padding(EdgeInsets(top: .p16, leading: .p16, bottom: .p4, trailing: .p16))
+        }
+        .onAppear {
+            localSelectedIndex = selectedIndex
+        }
+        .onChange(of: selectedIndex) { _, newValue in
+            localSelectedIndex = newValue
         }
     }
 }
