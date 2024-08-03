@@ -7,7 +7,23 @@
 
 import Foundation
 import SwiftUI
+
 class Utils {
+    static var textTheme = Color(hex: "000000")
+    static var textThemeSecondary = Color(hex: "FFFFFF")
+    static var topbarBackgroundTheme = Color(hex: "BFC9CA")
+    static var themePrimaryGradientColor1 = Color(hex: "000000") // Black
+    static var themePrimaryGradientColor2 = Color(hex: "4A4A4A") // Light Gray
+
+    static var themePrimaryGradientTopTab = Color(hex: "F0F3F4") // Very Light Gray
+
+    static var themeSecondaryBackgroundColor = Color(hex: "1B1B1B")
+
+
+    static var themeSecondaryGradientColor1 = Color.clear
+    static var themeSecondaryGradientColor2 = Color(hex: "000000") // Dark Gray
+
+    
     static var keyboardHeight: CGFloat = 0
     static func getSafeAreaTop()->CGFloat {
         let keyWindow = UIApplication.shared.connectedScenes
@@ -16,10 +32,38 @@ class Utils {
             .compactMap({$0})
             .first?.windows
             .filter({$0.isKeyWindow}).first
-        return (keyWindow?.safeAreaInsets.top)!
+        return (keyWindow?.safeAreaInsets.top) ?? 0
         
     }
+}
 
+extension View {
+    func readIntrinsicContentSize(to size: Binding<CGSize>) -> some View {
+        background(GeometryReader { proxy in
+            Color.clear.preference(
+                key: IntrinsicContentSizePreferenceKey.self,
+                value: proxy.size
+            )
+        })
+        .onPreferenceChange(IntrinsicContentSizePreferenceKey.self) {
+            size.wrappedValue.width = $0.width
+            size.wrappedValue.height = $0.height
+            print($0)
+        }
+    }
+}
+extension Collection {
+    /// Returns the element at the specified index if it is within bounds, otherwise nil.
+    subscript (safe index: Index) -> Element? {
+        return indices.contains(index) ? self[index] : nil
+    }
+}
+struct IntrinsicContentSizePreferenceKey: PreferenceKey {
+    static let defaultValue: CGSize = .zero
+
+    static func reduce(value: inout CGSize, nextValue: () -> CGSize) {
+        value = nextValue()
+    }
 }
 
 extension Color {
@@ -95,3 +139,6 @@ public extension CGFloat {
     static let r32: CGFloat = 32.0
     static let r40: CGFloat = 40.0
 }
+#Preview(body: {
+    HomeScreen()
+})
