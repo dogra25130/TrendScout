@@ -77,6 +77,9 @@ struct RatingsView: View {
 }
 
 struct ProductInfoView: View {
+    
+    
+    
     let data: CardDetail
     var body: some View {
         ZStack {
